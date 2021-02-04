@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TurtleBear.master.cs" Inherits="TurtleBear_v2.TurtleBear" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-grid.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Turtle Bear</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="WelcomePage.aspx">Welcome</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FAQPage.aspx">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutPage.aspx">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PolicyPage.aspx">Policies</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
